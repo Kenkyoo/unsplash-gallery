@@ -51,11 +51,11 @@ function generateImages(data) {
   data.forEach(item => {
     box += `
       <div class="photo-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-3">
-        <a href="${item.links.html}">
+        <a href="${item.links.html}" target="_blank">
           <img src="${item.urls.regular}" alt="${item.alt_description}" />
         </a>
         <aside class="photo-box-caption">
-          <span>by <a href="${item.user.html}">${item.user.name}</a></span>
+          <span>by <a href="${item.user.html}" target="_blank">${item.user.name}</a></span>
         </aside>
       </div>
     `;
