@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Gallery</title>
+    <!-- Pure CSS Base -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+    <!-- Pure CSS Grids -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-min.css">
+    <!-- Pure CSS Grids responsive-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <!-- Pure CSS Menus-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/menus-min.css">
+    <!-- Pure CSS Forms -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/forms-min.css">
+    <!-- Pure CSS Buttons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/buttons-min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="https://kit.fontawesome.com/98504ea853.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header">
+            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <a class="pure-menu-heading" href="index.html">Unsplash Gallery</a>
+                <a class="pure-menu-heading" href="search.html">Busqueda</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#header" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="#photos" class="pure-menu-link">Photos</a></li>
+                    <li class="pure-menu-item"><a href="#random" class="pure-menu-link">Random</a></li>
+                    <li class="pure-menu-item"><a href="#topics" class="pure-menu-link">Topics</a></li>
+                    <li class="pure-menu-item"><a href="#collection" class="pure-menu-link">Collections</a></li>
+                    <li class="pure-menu-item"><a href="#stats" class="pure-menu-link">Stats</a></li>
+                    <li class="pure-menu-item"><a href="#footer" class="pure-menu-link">Contact</a></li>
+                    <li class="pure-menu-item">
+                        <label class="switch">
+                            <input id="toggle" type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="splash-container">
+            <div class="splash">
+                <h1 class="splash-head">Discover Amazing Photos</h1>
+                <p class="splash-subhead">
+                    Explore, collect, and enjoy beautiful images from Unsplash.
+                </p>
+            </div>
+        </div>
+    </header>
+    <div class="content-wrapper">
+        <main>
+            <section id="photos">
+                <div class="pure-g" id="container">
+                    <div class="text-box pure-u-1 pure-u-md-1-2 pure-u-lg-2-3">
+                        <div class="l-box">
+                            <h1 class="text-box-head">Photos from around the world</h1>
+                            <p class="text-box-subhead">
+                                A collection of beautiful photos gathered from Unsplash.com.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="random">
+                <div class="pure-g random-container">
+                    <div class="pure-u-1-1">
+                        <h4>Foto Random</h4>
+                        <p>Elije una foto al azar</p>
+                    </div>
+                    <div class="pure-u-1-1">
+                        <img src="" alt="" class="pure-img" id="randomImg">
+                    </div>
+                    <div class="pure-u-1-1">
+                        <i class="fa-solid fa-dice" id="randomBtn"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="topics">
+                <div class="content">
+                    <h2 class="content-head is-center">Topics</h2>
+                    <p class="is-center">Explora el mundo a través de temas de bellas imágenes que puedes usar
+                        gratuitamente bajo la licencia Unsplash.</p>
+                    <div class="pure-g" id="topicsContainer"></div>
+                </div>
+            </section>
+            <section>
+                <div class="content">
+                    <h2 class="content-head is-center">Unsplash no existiría sin sus miles de colaboradores</h2>
+                    <div class="ribbon l-box-lrg pure-g" id="ribbon"></div>
+                </div>
+            </section>
+            <section id="collection">
+                <div class="content-wrapp">
+                    <h2 class="content-head is-center">Colecciones</h2>
+                    <p>
+                        Explora el mundo a través de colecciones de bellas imágenes gratuitas bajo la licencia Unsplash.
+                    </p>
+                    <div class="pure-g" id="collections">
+                    </div>
+                </div>
+            </section>
+            <section id="stats">
+                <div class="content">
+                    <h2 class="content-head is-center">Estadísticas de Unsplash</h2>
+                    <p class="is-center">Descubre cómo la comunidad de Unsplash ha crecido con el tiempo.</p>
+
+                    <div class="pure-g">
+                        <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
+                            <form class="pure-form pure-form-stacked">
+                                <fieldset>
+
+                                    <label for="name">Your Name</label>
+                                    <input id="name" type="text" placeholder="Your Name">
+
+
+                                    <label for="email">Your Email</label>
+                                    <input id="email" type="email" placeholder="Your Email">
+
+                                    <label for="password">Your Password</label>
+                                    <input id="password" type="password" placeholder="Your Password">
+
+                                    <button type="submit" class="pure-button">Sign Up</button>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                        <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                            <div class="stats-container">
+                                <div>
+                                    <h4>Actividad</h4>
+                                    <h5>Vistas históricas</h5>
+                                    <p class="item"></p>
+                                    <h5>Descargas históricas</h5>
+                                    <p class="item"></p>
+                                </div>
+                                <div>
+                                    <h4>Comunidad</h4>
+                                    <h5>Imágenes disponibles</h5>
+                                    <p class="item"></p>
+                                    <h5>Colaboradores</h5>
+                                    <p class="item"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="footer l-box is-center">
+                View the source of this layout to learn more. Made with love by the Pure Team.
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Unsplash</title>
+    <!-- Pure CSS Base -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+    <!-- Pure CSS Grids -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-min.css">
+    <!-- Pure CSS Grids responsive-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <!-- Pure CSS Menus-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/menus-min.css">
+    <!-- Pure CSS Forms -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/forms-min.css">
+    <!-- Pure CSS Buttons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/buttons-min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+
+<body>
+    <header>
+        <nav class="pure-menu pure-menu-horizontal">
+            <a class="pure-menu-heading" href="search.html">Unsplash Gallery</a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#results" class="pure-menu-link">Results</a></li>
+                <li class="pure-menu-item"><a href="#footer" class="pure-menu-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1 class="banner-head">Search for Beautiful Photos</h1>
+            <form class="pure-form">
+                <input type="text" class="pure-input-rounded" id="input" />
+                <button type="submit" class="pure-button" id="btn">Search</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="results" id="results">
+            <div>
+                <p id="value"></p>
+            </div>
+            <div>
+                <p id="total"></p>
+            </div>
+        </div>
+        <div class="pure-g" id="imgContainer"></div>
+    </main>
+    <footer id="footer">
+        <div class="footer l-box is-center">
+            View the source of this layout to learn more. Made with love by the Pure Team.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
